@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(218, 191, 149);
+  font-family: "Roboto";
+}
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+button, input {
+  font-family: inherit;
+  font-weight: inherit;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+form {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+form > div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+  width: 600px;
+  height: 600px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 20px;
+  background-color: white;
+}
+
+#exit-form,
+.remove-book {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+}
+
+#exit-form > svg,
+.remove-book {
+  height: 24px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form h1 {
+  grid-column: 1 / 3;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input {
+  text-align: center;
+  font-size: 1rem;
+  width: 80%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+}
+
+.check {
+  grid-column: 1 / 3;
+}
+
+.check > input {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+form button {
+  grid-column: 1 / 3;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: rgb(218, 191, 149);
+  color: white;
+  transition: background-color;
+}
+
+form button:active {
+  background-color: rgb(203, 178, 139);
+}
+
+#new-book {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  transition: background-color;
+}
+
+#new-book:active {
+  background-color: rgb(203, 178, 139);
+}
+
+#shelf {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 200px);
+}
+
+.book-card{
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 220px;
+  height: 300px;
+  padding: 2rem;
+  background-color: rgb(247, 243, 243);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.book-card > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+}
+
+.book-card > div:last-child > div{
+  display: flex;
+  justify-content: center;
+}
+
+.book-card > div:last-child > div > h3{
+  margin-right: 24px;
+}
+
+.book-card > div:last-child > div > img{
+  width: 24px;
+}

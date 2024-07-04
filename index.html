@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form>
+    <div>
+      <div id="exit-form">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
+      </div>
+      <h1 class="grid-item">Add your book</h1>
+      <div class="grid-item">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" required>
+      </div>
+      <div class="grid-item">
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" required>
+      </div>
+      <div class="grid-item">
+        <label for="published">Published</label>
+        <input type="number" max="2024" name="published" id="published" required>
+      </div>
+      <div class="grid-item">
+        <label for="pages">Pages</label>
+        <input type="number" name="pages" id="pages" required>
+      </div>
+      <div class="grid-item check">
+        <label for="read">Already read</label>
+        <input type="checkbox" name="read" id="read">
+      </div>
+      <button class="grid-item" id="submit">Submit</button>
+    </div>
+  </form>
+
+  <button id="new-book" type="button">ADD NEW BOOK</button>
+
+  <div id="shelf">
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

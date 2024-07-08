@@ -133,7 +133,7 @@ form button:active {
   gap: 1rem;
   justify-content: center;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, 220px);
 }
 
 .book-card{
